@@ -39,10 +39,10 @@ export default function Interests() {
           ))}
         </div>
 
-        {/* Work-Life Balance Message */}
-        <div className="mt-12 max-w-2xl mx-auto text-center bg-[#5dd3b6]/10 dark:bg-[#5dd3b6]/20 border-l-4 border-[#5dd3b6] p-6 rounded-lg">
-          <p className="text-[#1e1e1e]/80 dark:text-white/80 leading-relaxed">
-            <strong className="text-[#1e1e1e] dark:text-white">Work-Life-Balance:</strong> Der Ausgleich zwischen
+        {/* Work-Life Balance Message Planner (Invisible to preserve layout) */}
+        <div className="mt-12 max-w-2xl mx-auto text-center p-6 invisible">
+          <p className="leading-relaxed">
+            <strong>Work-Life-Balance:</strong> Der Ausgleich zwischen
             intensiver geistiger Arbeit und korperlicher Aktivitat hilft mir, langfristig leistungsfahig
             und motiviert zu bleiben. Diese Balance ubertrage ich auch auf meine Arbeitsweise.
           </p>
