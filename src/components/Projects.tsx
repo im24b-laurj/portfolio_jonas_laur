@@ -29,8 +29,17 @@ export default function Projects() {
               onClick={() => setSelectedProject(selectedProject === project.id ? null : project.id)}
             >
               {/* Project Header */}
-              <div className="relative h-48 flex items-center justify-center bg-[#5dd3b6] dark:bg-[#5dd3b6]">
-                <div className="text-white opacity-80 text-5xl">📦</div>
+              <div className="relative h-48 flex items-center justify-center bg-[#5dd3b6] dark:bg-[#5dd3b6] overflow-hidden">
+                {project.previewImage ? (
+                  <img
+                    src={project.previewImage}
+                    alt={`${project.title} Preview`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="text-white opacity-80 text-5xl">📦</div>
+                )}
                 <div className="absolute top-4 right-4">
                   <span className={`px-3 py-1 rounded-full text-sm text-white ${
                     project.status === 'Abgeschlossen' ? 'bg-white/20' : 'bg-black/20'
@@ -63,17 +72,35 @@ export default function Projects() {
                   {project.shortDescription}
                 </p>
 
-                {/* CTA Link */}
-                <a
-                  href={project.repoUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-[#5dd3b6] font-medium"
-                  aria-label={`${project.title} auf GitHub anschauen`}
-                >
-                  Zum Projekt
-                  <span aria-hidden="true">↗</span>
-                </a>
+                {/* CTA Link(s) */}
+                {project.repos ? (
+                  <div className="flex flex-wrap gap-3">
+                    {project.repos.map((repo) => (
+                      <a
+                        key={repo.url}
+                        href={repo.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 text-[#5dd3b6] font-medium"
+                        aria-label={`${project.title} - ${repo.name} auf GitHub anschauen`}
+                      >
+                        {repo.name}
+                        <span aria-hidden="true">↗</span>
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-[#5dd3b6] font-medium"
+                    aria-label={`${project.title} auf GitHub anschauen`}
+                  >
+                    Zum Projekt
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                )}
               </div>
             </article>
           ))}

@@ -47,10 +47,10 @@ export default function Contact() {
   return (
     <section
       id="kontakt"
-      className="py-20 bg-[#efe1b5] dark:bg-[#2d2d2d] transition-colors scroll-mt-20"
+      className="py-32 mt-8 bg-[#efe1b5] dark:bg-[#2d2d2d] transition-colors scroll-mt-20"
       aria-labelledby="contact-heading"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 pt-16">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 id="contact-heading" className="text-4xl mb-6 text-[#1e1e1e] dark:text-white font-semibold">
@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto px-4">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>

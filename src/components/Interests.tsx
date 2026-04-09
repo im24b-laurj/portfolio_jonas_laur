@@ -27,7 +27,7 @@ export default function Interests() {
           {interests.map((interest) => (
             <article
               key={interest.id}
-              className="bg-[#efe1b5] dark:bg-[#2d2d2d] p-6 rounded-xl shadow-lg"
+              className="bg-[#efe1b5] dark:bg-[#2d2d2d] p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
             >
               <h3 className="text-xl mb-3 text-[#1e1e1e] dark:text-white font-semibold">
                 {interest.title}

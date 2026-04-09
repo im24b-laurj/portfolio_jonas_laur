@@ -9,7 +9,9 @@ export interface Project {
   shortDescription: string;
   description?: string;
   tech: string[];
-  repoUrl: string;
+  repoUrl?: string;
+  repos?: Array<{ name: string; url: string }>;
+  previewImage?: string;
   status: 'Abgeschlossen' | 'In Entwicklung';
 }
 
@@ -134,11 +136,15 @@ export const skills: SkillCategory[] = [
 export const projects: Project[] = [
   {
     id: 'p1',
-    title: 'Webanwendung mit Flask & React',
+    title: 'Ultimate Ship Shooter',
     shortDescription:
-      'Eine Lernprojekt-Webanwendung, die Backend- und Frontend-Konzepte verbindet, um die Zusammenarbeit zwischen Server und Client zu demonstrieren.',
-    tech: ['Python', 'Flask', 'React', 'JavaScript', 'CSS'],
-    repoUrl: 'https://github.com/jonaslaurdev/flask-react-app',
+      'Ein interaktives Weltraum-Shooter-Spiel mit WebSocket-Kommunikation in Echtzeit. Spieler steuern ein Raumschiff und schießen auf Asteroiden. Backend mit Spring Boot und Java, Frontend mit moderner Web-Technologie.',
+    tech: ['Java', 'Spring Boot', 'WebSocket', 'JavaScript', 'HTML5', 'CSS'],
+    repos: [
+      { name: 'Backend', url: 'https://github.com/Kevin-Rechsteiner/UltimateShipShooter' },
+      { name: 'Frontend', url: 'https://github.com/Kevin-Rechsteiner/frontend_for_asteroid' },
+    ],
+    previewImage: '/shipshooter-preview.png',
     status: 'Abgeschlossen',
   },
   {
