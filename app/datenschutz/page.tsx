@@ -39,13 +39,13 @@ export default function Datenschutz() {
               <p className="text-[#1e1e1e]/80 dark:text-white/80 mb-4">
                 Jonas Laur
                 <br />
-                [Deine Adresse]
+                Im Heimgärtli 20
                 <br />
-                [PLZ Ort]
+                8047 Zürich
                 <br />
-                Deutschland
+                Schweiz
                 <br />
-                E-Mail: [Deine E-Mail-Adresse]
+                E-Mail: Jonas.Laur@gmx.ch
               </p>
 
               <h3 className="text-lg font-semibold mb-2 text-[#1e1e1e] dark:text-white">Wie erfassen wir Ihre Daten?</h3>
