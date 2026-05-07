@@ -22,20 +22,20 @@ export default function Impressum() {
               <p className="text-[#1e1e1e]/80 dark:text-white/80">
                 <strong>Jonas Laur</strong>
                 <br />
-                [Deine Adresse]
+                Im Heimgärtli 20
                 <br />
-                [PLZ Ort]
+                8047 Zürich
                 <br />
-                Deutschland
+                Schweiz
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-[#1e1e1e] dark:text-white">Kontaktinformationen</h2>
               <p className="text-[#1e1e1e]/80 dark:text-white/80">
-                <strong>Telefon:</strong> [Deine Telefonnummer]
+                <strong>Telefon:</strong> +41 77 526 39 90
                 <br />
-                <strong>E-Mail:</strong> [Deine E-Mail-Adresse]
+                <strong>E-Mail:</strong> Jonas.Laur@gmx.ch
               </p>
             </div>
 
@@ -44,11 +44,11 @@ export default function Impressum() {
               <p className="text-[#1e1e1e]/80 dark:text-white/80">
                 Jonas Laur
                 <br />
-                [Deine Adresse]
+                Im Heimgärtli 20
                 <br />
-                [PLZ Ort]
+                8047 Zürich
                 <br />
-                Deutschland
+                Schweiz
               </p>
             </div>
 
