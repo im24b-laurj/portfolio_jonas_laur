@@ -10,6 +10,7 @@ export interface Project {
   description?: string;
   tech: string[];
   repoUrl?: string;
+  liveUrl?: string | null;
   repos?: Array<{ name: string; url: string }>;
   previewImage?: string;
   status: 'Abgeschlossen' | 'In Entwicklung';
@@ -149,12 +150,13 @@ export const projects: Project[] = [
   },
   {
     id: 'p2',
-    title: 'Responsive Portfolio-Website',
+    title: 'Jonify Pro',
     shortDescription:
-      'Dieses Portfolio demonstriert responsives Design, barrierefreie Semantik und moderne Frontend-Workflows mit Next.js und Tailwind CSS.',
-    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-    repoUrl: 'https://github.com/jonaslaurdev/responsive-portfolio',
-    status: 'Abgeschlossen',
+      'Eigener Web-Musikplayer mit Express-Backend und MySQL-Datenbank. MP3-Dateien werden automatisch eingescannt, Metadaten ausgelesen und über eine REST-API bereitgestellt. Features umfassen Audio-Streaming, Playlist-Verwaltung und eine moderne Web-Oberfläche.',
+    tech: ['Node.js', 'Express', 'MySQL', 'JavaScript', 'HTML5', 'CSS'],
+    liveUrl: null,
+    repos: [{ name: 'Backend', url: 'https://github.com/im24b-laurj/jonify-pro' }],
+    status: 'In Entwicklung',
   },
   {
     id: 'p3',
