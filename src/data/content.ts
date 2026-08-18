@@ -156,6 +156,7 @@ export const projects: Project[] = [
     tech: ['Node.js', 'Express', 'MySQL', 'JavaScript', 'HTML5', 'CSS'],
     liveUrl: null,
     repos: [{ name: 'Backend', url: 'https://github.com/im24b-laurj/jonify-pro' }],
+    previewImage: '/jonify_pro.png',
     status: 'In Entwicklung',
   },
   {

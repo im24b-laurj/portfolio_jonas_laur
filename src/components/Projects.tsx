@@ -86,8 +86,9 @@ export default function Projects() {
                                     <span aria-hidden="true">↗</span>
                                   </a>
                               ) : (
-                                  <span className="inline-flex items-center gap-2 text-[#5dd3b6] font-medium">
+                                  <span className="inline-flex items-center gap-2 font-medium text-primary">
                                     Zum Projekt
+                                    <span aria-hidden="true">↗</span>
                                   </span>
                               )
                           )}
