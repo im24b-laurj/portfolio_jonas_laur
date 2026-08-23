@@ -161,12 +161,14 @@ export const projects: Project[] = [
   },
   {
     id: 'p3',
-    title: 'Datenbank-Übungsprojekt',
+    title: 'Silbenbombe',
     shortDescription:
-      'Ein kleines Projekt zum Entwerfen und Abfragen von Datenbanken zur Übung von SQL- und NoSQL-Konzepten.',
-    tech: ['MySQL', 'NoSQL', 'Python'],
-    repoUrl: 'https://github.com/jonaslaurdev/db-exercises',
-    status: 'In Entwicklung',
+      'Ein Echtzeit-Multiplayer-Wortspiel im Browser: Eine Bombe wandert von Spieler zu Spieler und wer sie hält, muss ein deutsches Wort mit der angezeigten Silbe eintippen, bevor die Zündschnur abbrennt. Wer schnell entschärft, verdient Sabotage-Token für kürzere Zündschnüre oder gesperrte Buchstaben beim Gegner. Backend mit Node.js und WebSockets, Highscores in einer PostgreSQL-Datenbank, Frontend bewusst ohne Framework.',
+    tech: ['Node.js', 'WebSocket', 'PostgreSQL', 'JavaScript', 'HTML5', 'CSS'],
+    liveUrl: 'https://silbenbombe.4819909.deploio.app/?r=',
+    repos: [{ name: 'GitHub', url: 'https://github.com/im24b-huengerlee/OuShi' }],
+    previewImage: '/silbengame.png',
+    status: 'Abgeschlossen',
   },
 ];
 
@@ -174,25 +176,25 @@ export const interests: Interest[] = [
   {
     id: 'dev',
     title: 'Softwareentwicklung',
-    description: 'Programmieren ist nicht nur meine berufliche Leidenschaft, sondern auch mein Hobby. Ich arbeite regelmäßig an eigenen Projekten und erweitere mein technisches Wissen.',
+    description: 'Programmieren ist nicht nur meine Leidenschaft, sondern auch mein Hobby. Ich arbeite regelmässig an eigenen Projekten und erweitere mein technisches Wissen laufend.',
     emoji: '💻',
   },
   {
     id: 'bike',
     title: 'Biken',
-    description: 'Als Ausgleich zur Informatik bin ich gerne auf dem Bike unterwegs. Die Bewegung an der frischen Luft hilft mir, den Kopf frei zu bekommen.',
+    description: 'Ich bin gerne auf dem Bike unterwegs. Die Bewegung an der frischen Luft tut mir gut und hilft mir, den Kopf freizubekommen.',
     emoji: '🚴',
   },
   {
     id: 'fitness',
     title: 'Fitnessstudio',
-    description: 'Regelmäßiges Training im Fitnessstudio ist Teil meiner Routine und fördert meine mentale Fitness.',
+    description: 'Regelmässiges Training im Fintessstudion macht mir Spass und gibt mir ein gutes Körpergefühl.',
     emoji: '💪',
   },
   {
     id: 'team',
     title: 'Teamarbeit',
-    description: 'Ob im Sport oder in Projekten – ich schätze die Zusammenarbeit mit anderen und gemeinsame Erfolge.',
+    description: 'In Projekten, in der Freizeit, beim Sport. Ich schätze den Austausch und die Zusammenarbeit mit anderen und bringe gerne meine Ideen ein.',
     emoji: '🤝',
   },
 ];

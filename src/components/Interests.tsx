@@ -17,8 +17,9 @@ export default function Interests() {
             Interessen & Ausgleich
           </h2>
           <p className="text-lg text-[#1e1e1e]/80 dark:text-white/80">
-            Neben der Informatik ist mir ein gesunder Ausgleich wichtig. Sport hilft mir,
-            fokussiert und ausgeglichen zu bleiben - eine wichtige Voraussetzung fur erfolgreiche Arbeit.
+            Neben der Informatik ist mir ein geselliger und gesunder Ausgleich wichtig. Sport hilft mir,
+            fokussiert und ausgeglichen zu bleiben. Mit meinen Freunden spiele ich gerne strategische und
+            herausfordernde Online-Games.
           </p>
         </div>
 

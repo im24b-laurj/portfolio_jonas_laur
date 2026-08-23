@@ -35,16 +35,15 @@ export default function Hero() {
 
           {/* Visual Element */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-[#5dd3b6] dark:bg-[#5dd3b6] h-96 flex items-center justify-center">
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-lg rotate-12" />
-                <div className="absolute bottom-10 right-10 w-24 h-24 border-4 border-white rounded-full" />
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-4 border-white rounded-lg -rotate-6" />
-              </div>
-              <div className="relative z-10 text-center text-white p-8">
-                <div className="text-6xl mb-4">&lt;/&gt;</div>
-                <p className="text-2xl font-semibold">Code. Learn. Grow.</p>
-              </div>
+            <div className="relative z-10 h-96 flex flex-col items-center justify-center gap-4">
+              <img
+                src="/Jonas-1.jpg"
+                alt="Jonas Laur"
+                className="min-h-0 flex-1 w-auto max-w-full object-contain rounded-2xl shadow-2xl"
+              />
+              <p className="text-2xl font-semibold text-[#1e1e1e] dark:text-white">
+                Code. Learn. Grow.
+              </p>
             </div>
             <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-[#5dd3b6] rounded-full opacity-20 blur-3xl" />
             <div className="absolute -top-6 -right-6 w-48 h-48 bg-[#6e5034] dark:bg-[#5dd3b6] rounded-full opacity-20 blur-3xl" />
