@@ -13,6 +13,8 @@ export interface Project {
   liveUrl?: string | null;
   repos?: Array<{ name: string; url: string }>;
   previewImage?: string;
+  /** Auszeichnung, die als Gold-Badge oben rechts auf der Karte erscheint. */
+  award?: string;
   status: 'Abgeschlossen' | 'In Entwicklung';
 }
 
@@ -104,6 +106,8 @@ export const skills: SkillCategory[] = [
     id: 'backend',
     title: 'Backend Development',
     items: [
+      { name: 'Java', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
+      { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
       { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
       { name: 'Flask', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg' },
       { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
@@ -168,6 +172,7 @@ export const projects: Project[] = [
     liveUrl: 'https://silbenbombe.4819909.deploio.app/?r=',
     repos: [{ name: 'GitHub', url: 'https://github.com/im24b-huengerlee/OuShi' }],
     previewImage: '/silbengame.png',
+    award: '1. Hackaton',
     status: 'Abgeschlossen',
   },
 ];

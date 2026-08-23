@@ -38,13 +38,29 @@ export default function Projects() {
                     ) : (
                         <div className="text-white opacity-80 text-5xl">📦</div>
                     )}
-                    <div className="absolute top-4 right-4">
+                    {/* Status: weicht nach links aus, wenn eine Auszeichnung angezeigt wird */}
+                    <div className={`absolute top-4 ${project.award ? 'left-4' : 'right-4'}`}>
                   <span className={`px-3 py-1 rounded-full text-sm text-white ${
                       project.status === 'Abgeschlossen' ? 'bg-white/20' : 'bg-black/20'
                   }`}>
                     {project.status}
                   </span>
                     </div>
+
+                    {/* Auszeichnung */}
+                    {project.award && (
+                        <div className="absolute top-1 right-2 z-10 w-20 h-20 pointer-events-none">
+                          <img
+                              src="/gold-badge-5392868-removebg-preview.png"
+                              alt={`Auszeichnung: ${project.award}`}
+                              className="w-full h-full object-contain drop-shadow-md"
+                              loading="lazy"
+                          />
+                          <span className="absolute inset-x-0 top-[37%] -translate-y-1/2 px-3 text-center text-[9px] font-bold leading-tight text-[#6e5034]">
+                            {project.award}
+                          </span>
+                        </div>
+                    )}
                   </div>
 
                   {/* Project Content */}
